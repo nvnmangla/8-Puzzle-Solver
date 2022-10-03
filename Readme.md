@@ -7,8 +7,12 @@ change goal and start node according to choice
 save the file 
 open the terminal in <yourdirectory>/proj1_Naveen_Mangla 
 change fname in plot_path.py as well
-use:  $python3 solution.py 
+use:  
 
+```
+python3 solution.py 
+
+```
 Libraries used 
 
 import ast
