@@ -15,5 +15,5 @@ python3 solution.py
 ```
 Libraries used 
 
-import ast
-import numpy as np
+numpy 
+ast
