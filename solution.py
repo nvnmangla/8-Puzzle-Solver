@@ -1,4 +1,4 @@
-
+#/usr/bin/env python3
 import ast
 import numpy as np
 
@@ -68,7 +68,7 @@ def RUN(data, goal, visited):
 def BFS(start,goal):
     # Change this Location to your own directory :)
     ##################
-    location = "/home/naveen/ENPM663/"
+    location = "BFS/"
     ##################
 
     node_i = repair(start)
@@ -79,7 +79,7 @@ def BFS(start,goal):
     index = parents[len(parents)-1]
     path = generate_path(index, visited, parents)
 
-    textfile = open(location+"proj1_Naveen_Mangla/nodePath.txt", "w")
+    textfile = open(location+"nodePath.txt", "w")
     print("Writing Path File")
     for element in path:
         for i in element:
@@ -87,7 +87,7 @@ def BFS(start,goal):
         textfile.write('\n')
     textfile.close()
 
-    textfile = open(location+"proj1_Naveen_Mangla/NodesInfo.txt", "w")
+    textfile = open(location+"NodesInfo.txt", "w")
     print("Writing Node Info")
     textfile.write('Node_index  Patrent_index  cost')
     textfile.write('\n')
@@ -98,7 +98,7 @@ def BFS(start,goal):
     textfile.close()
     print("All Done!")
 
-    textfile = open(location+"proj1_Naveen_Mangla/Nodes.txt", "w")
+    textfile = open(location+"Nodes.txt", "w")
     print("Writing Node File")
     for element in visited:
         temp = ast.literal_eval(element)

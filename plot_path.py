@@ -13,7 +13,7 @@ def print_matrix(state):
         print("\n-------------")
 
 
-fname = '/home/naveen/ENPM663/proj1_Naveen_Mangla/nodePath.txt'
+fname = 'BFS/nodePath.txt'
 data = np.loadtxt(fname)
 if len(data[1]) != 9:
     print("Format of the text file is incorrect, retry ")
